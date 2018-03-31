@@ -5,6 +5,8 @@ import Button from '@schibstedspain/sui-atom-button'
 
 import './app.scss'
 
+import TodoItem from './TodoItem'
+
 class App extends React.Component {
   state = {
     text: '',
@@ -47,7 +49,7 @@ class App extends React.Component {
         <Button onClick={this.addTodo}>Add task</Button>
         <ul>
           <h3>ToDos</h3>
-          {this.state.todos.map((n, i) => <li key={i}>{n}</li>)}
+          {this.state.todos.map((n, i) => <TodoItem key={i} todoText={n} />)}
         </ul>
       </div>
     )
