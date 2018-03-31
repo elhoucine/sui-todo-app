@@ -1,15 +1,23 @@
 import React from 'react'
-// import ReactDom from 'react-dom'
 import PropTypes from 'prop-types'
-
+import Button from '@schibstedspain/sui-atom-button'
 // import './app.scss'
 
-const TodoItem = ({ todoText }) => {
-  return <li>{todoText}</li>
+const TodoItem = ({ _id, todoText, removeItem }) => {
+  return (
+    <li>
+      {todoText}
+      <Button link size='small' onClick={() => removeItem(_id)}>
+        X
+      </Button>
+    </li>
+  )
 }
 
 TodoItem.propTypes = {
-  todoText: PropTypes.string.isRequired
+  _id: PropTypes.number.isRequired,
+  todoText: PropTypes.string.isRequired,
+  removeItem: PropTypes.func.isRequired
 }
 
 export default TodoItem

@@ -14,6 +14,17 @@ class App extends React.Component {
     todos: []
   }
 
+  removeItem = elmId => {
+    const newTodos = [...this.state.todos]
+    newTodos.splice(elmId, 1)
+
+    if (this.state.todos[elmId]) {
+      this.setState({
+        todos: newTodos
+      })
+    }
+  }
+
   handleChange = event => {
     this.setState({
       text: event.target.value,
@@ -48,7 +59,7 @@ class App extends React.Component {
         <br />
         <Button onClick={this.addTodo}>Add task</Button>
 
-        <TodoList items={this.state.todos} />
+        <TodoList items={this.state.todos} removeItem={this.removeItem} />
       </div>
     )
   }
