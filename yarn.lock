@@ -175,11 +175,22 @@
   dependencies:
     "@s-ui/component-dependencies" latest
 
+"@schibstedspain/sui-form-checkbox@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@schibstedspain/sui-form-checkbox/-/sui-form-checkbox-1.5.0.tgz#4b0e30735310e0320e989e94177bb9a69412bf0a"
+  dependencies:
+    "@s-ui/component-dependencies" "1"
+    "@schibstedspain/sui-svgiconset" "1"
+
 "@schibstedspain/sui-form-text-input@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@schibstedspain/sui-form-text-input/-/sui-form-text-input-1.5.0.tgz#c7879b0926836a4d25c61d92de86bdec2ab7cc3c"
   dependencies:
     "@s-ui/component-dependencies" "1"
+
+"@schibstedspain/sui-svgiconset@1":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@schibstedspain/sui-svgiconset/-/sui-svgiconset-1.6.0.tgz#f67da41beacc0194abf8a018a422ea7a3eff0c17"
 
 "@schibstedspain/sui-theme@8":
   version "8.32.0"
