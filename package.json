@@ -1,0 +1,26 @@
+{
+  "name": "sui-todo",
+  "version": "1.0.0",
+  "description": "sui todo app",
+  "main": "src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "sui-bundler build -C",
+    "start": "sui-bundler dev"
+  },
+  "devDependencies": {
+    "@s-ui/bundler": "^2.15.0",
+    "@s-ui/component-peer-dependencies": "^1.5.0",
+    "@s-ui/lint": "^2.9.0"
+  },
+  "dependencies": {
+    "@schibstedspain/sui-atom-button": "^1.9.0",
+    "@schibstedspain/sui-form-text-input": "^1.5.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "sasslintConfig": "./node_modules/@s-ui/lint/sass-lint.yml"
+}
