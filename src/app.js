@@ -76,34 +76,27 @@ class App extends React.Component {
 
   render () {
     return (
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column'
-        }}
+      <SectionBasic
+        sectionBottomSpacing={sectionBasicBottomSpacing.GIANT}
+        headerBottomSpacing={sectionBasicBottomSpacing.XLARGE}
+        contentBottomSpacing={sectionBasicBottomSpacing.MEDIUM}
       >
-        <SectionBasic
-          sectionBottomSpacing={sectionBasicBottomSpacing.GIANT}
-          headerBottomSpacing={sectionBasicBottomSpacing.XLARGE}
-          contentBottomSpacing={sectionBasicBottomSpacing.MEDIUM}
-        >
-          <TitleBasic title='Awesome Todos' subtitle='Get things done' />
-          <TodoList
-            items={this.state.todos}
-            removeItem={this.removeItem}
-            checkItem={this.checkItem}
-          />
-          <h3>Something todo?</h3>
-          <FormText
-            onChange={this.handleChange}
-            name='Task name'
-            value={this.state.text}
-            errorMessage={this.state.errorMessage}
-          />
-          <br />
-          <Button onClick={this.addTodo}>Add task</Button>
-        </SectionBasic>
-      </div>
+        <TitleBasic title='Awesome Todos' subtitle='Get things done' />
+        <TodoList
+          items={this.state.todos}
+          removeItem={this.removeItem}
+          checkItem={this.checkItem}
+        />
+        <h3>Something todo?</h3>
+        <FormText
+          onChange={this.handleChange}
+          name='Task name'
+          value={this.state.text}
+          errorMessage={this.state.errorMessage}
+        />
+        <br />
+        <Button onClick={this.addTodo}>Add task</Button>
+      </SectionBasic>
     )
   }
 }
