@@ -6,7 +6,7 @@ import TodoItem from './TodoItem'
 const TodoList = ({ items = [], removeItem, checkItem }) => {
   return (
     <ul>
-      <h3>ToDos</h3>
+      <h3>Things I need to do</h3>
       {items.map((n, i) => (
         <TodoItem
           key={i}

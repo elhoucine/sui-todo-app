@@ -1,14 +1,17 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+
+// SUI open source components ready to use
+// https://sui-components.now.sh
 import FormText from '@schibstedspain/sui-form-text-input'
 import Button from '@schibstedspain/sui-atom-button'
+import TitleBasic from '@schibstedspain/sui-title-basic'
 import SectionBasic, {
   sectionBasicBottomSpacing
 } from '@schibstedspain/sui-section-basic'
-import TitleBasic from '@schibstedspain/sui-title-basic'
 
-import './app.scss'
 import TodoList from './TodoList'
+import './app.scss'
 
 class App extends React.Component {
   state = {
@@ -65,13 +68,12 @@ class App extends React.Component {
       this.setState({
         errorMessage: 'Please type a task'
       })
-      return
+    } else {
+      this.setState({
+        text: '',
+        todos: [...this.state.todos, { text: this.state.text, checked: false }]
+      })
     }
-
-    this.setState({
-      text: '',
-      todos: [...this.state.todos, { text: this.state.text, checked: false }]
-    })
   }
 
   render () {

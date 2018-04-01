@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AtomButton from '@schibstedspain/sui-atom-button'
 import FormCheckbox from '@schibstedspain/sui-form-checkbox'
-// import './app.scss'
 
 const TodoItem = ({ _id, todoItem, removeItem, checkItem }) => {
   return (
