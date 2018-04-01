@@ -25,5 +25,5 @@ In this project, you will notice the use of many SUI components.
 
 ### Styling & Customization:
 
-There are ways to customize the styling of these components to adapt to your project trough theming, and also tools to create other components specific to your project, and a studio to showcase & document them.
+There are ways to customize the styling of these components to adapt to your project trough theming, and also tools to showcase & document them.
 More to that later.
