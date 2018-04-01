@@ -16,7 +16,9 @@
   "dependencies": {
     "@schibstedspain/sui-atom-button": "^1.9.0",
     "@schibstedspain/sui-form-checkbox": "^1.5.0",
-    "@schibstedspain/sui-form-text-input": "^1.5.0"
+    "@schibstedspain/sui-form-text-input": "^1.5.0",
+    "@schibstedspain/sui-section-basic": "^2.2.0",
+    "@schibstedspain/sui-title-basic": "^1.3.0"
   },
   "eslintConfig": {
     "extends": [

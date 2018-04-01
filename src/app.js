@@ -2,6 +2,10 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import FormText from '@schibstedspain/sui-form-text-input'
 import Button from '@schibstedspain/sui-atom-button'
+import SectionBasic, {
+  sectionBasicBottomSpacing
+} from '@schibstedspain/sui-section-basic'
+import TitleBasic from '@schibstedspain/sui-title-basic'
 
 import './app.scss'
 import TodoList from './TodoList'
@@ -78,20 +82,27 @@ class App extends React.Component {
           flexDirection: 'column'
         }}
       >
-        <TodoList
-          items={this.state.todos}
-          removeItem={this.removeItem}
-          checkItem={this.checkItem}
-        />
-        <h3>Something todo?</h3>
-        <FormText
-          onChange={this.handleChange}
-          name='Task name'
-          value={this.state.text}
-          errorMessage={this.state.errorMessage}
-        />
-        <br />
-        <Button onClick={this.addTodo}>Add task</Button>
+        <SectionBasic
+          sectionBottomSpacing={sectionBasicBottomSpacing.GIANT}
+          headerBottomSpacing={sectionBasicBottomSpacing.XLARGE}
+          contentBottomSpacing={sectionBasicBottomSpacing.MEDIUM}
+        >
+          <TitleBasic title='Awesome Todos' subtitle='Get things done' />
+          <TodoList
+            items={this.state.todos}
+            removeItem={this.removeItem}
+            checkItem={this.checkItem}
+          />
+          <h3>Something todo?</h3>
+          <FormText
+            onChange={this.handleChange}
+            name='Task name'
+            value={this.state.text}
+            errorMessage={this.state.errorMessage}
+          />
+          <br />
+          <Button onClick={this.addTodo}>Add task</Button>
+        </SectionBasic>
       </div>
     )
   }

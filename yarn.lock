@@ -188,6 +188,12 @@
   dependencies:
     "@s-ui/component-dependencies" "1"
 
+"@schibstedspain/sui-section-basic@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@schibstedspain/sui-section-basic/-/sui-section-basic-2.2.0.tgz#95f1448d06ef905cb61548fae4919d61fcf46f51"
+  dependencies:
+    "@s-ui/component-dependencies" "1"
+
 "@schibstedspain/sui-svgiconset@1":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@schibstedspain/sui-svgiconset/-/sui-svgiconset-1.6.0.tgz#f67da41beacc0194abf8a018a422ea7a3eff0c17"
@@ -195,6 +201,12 @@
 "@schibstedspain/sui-theme@8":
   version "8.32.0"
   resolved "https://registry.yarnpkg.com/@schibstedspain/sui-theme/-/sui-theme-8.32.0.tgz#56e8f75d178df465b152cecacf85eb576cb13fc0"
+
+"@schibstedspain/sui-title-basic@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@schibstedspain/sui-title-basic/-/sui-title-basic-1.3.0.tgz#997fd148808138e3153463e3f901ca7dc90d17de"
+  dependencies:
+    "@s-ui/component-dependencies" "1"
 
 "@schibstedspain/theme-basic@7":
   version "7.28.0"
